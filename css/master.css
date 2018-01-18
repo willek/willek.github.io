@@ -1,7 +1,5 @@
 body {
-  background: linear-gradient(to bottom right, #ecf0f1, #2c3e50);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(to bottom right, #ecf0f1, #2c3e50) fixed;
 }
 
 .to-top {
