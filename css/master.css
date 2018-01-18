@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(to bottom right, #ecf0f1, #2c3e50);
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .to-top {
@@ -20,14 +21,11 @@ body {
   border-bottom-left-radius: 185px 190px
 }
 
-<<<<<<< HEAD
-=======
 .link-to-papercss{
   text-decoration: none;
   color: #41403e;
 }
 
->>>>>>> defe92b1e269545dbe88c3d618ef90a24a2c4ea4
 .title{margin-top: 0}
 
 .heart{color:#e74c3c;}
