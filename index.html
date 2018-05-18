@@ -10,17 +10,19 @@
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="image/wil.png">
+    <link rel="shortcut icon" href="images/wil.png">
     <link rel="stylesheet" href="https://unpkg.com/papercss/dist/paper.min.css">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="styles/responsiveslides.css">
+    <link rel="stylesheet" href="styles/master.css">
     <title>Willy Setiawan</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="paper">
-        <!-- <div class="to-top">
+        <div class="to-top">
           <a href="#top" class="paper-btn margin">^</a>
-        </div> -->
+        </div>
         <div class="row flex-center" id="top">
           <div class="text-center">
             <h1>Willy Setiawan</h1>
@@ -88,8 +90,48 @@
             </div>
           </div>
         </div> -->
+        <div class="section">
+          <h2 class="center">Portofolio</h2>
+          <div class="row">
+            <div class="col sm-12">
+              <h4>1. Furniture Design</h4>
+              <ul class="rslides">
+                <li><img src="images/portofolio/fd-1.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-2.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-3.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-4.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-5.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-6.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-7.png" class="no-border"></li>
+              </ul>
+            </div>
+            <div class="col sm-12">
+              <h4>2. BBTKLPP Surabaya</h4>
+              <ul class="rslides">
+                <li><img src="images/portofolio/btkl-1.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-2.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-3.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-4.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-5.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-6.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-7.png" class="no-border"></li>
+              </ul>
+            </div>
+            <div class="col sm-12">
+              <h4>3. BarangPromosi.biz</h4>
+              <ul class="rslides">
+                <li><img src="images/portofolio/bp-1.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-2.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-3.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-4.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-5.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-6.png" class="no-border"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="section" id="contact">
-          <!-- <h3>Contact</h3> -->
+          <h2 class="center">Contact</h2>
           <div class="row">
             <div class="col sm-4 md-4 lg-4">
               <a href="https://www.facebook.com/wil.stwn" target="_blank"><button class="btn-block btn-small">Facebook</button></a>
@@ -113,5 +155,11 @@
       </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="scripts/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $(".rslides").responsiveSlides();
+    });
+    </script>
   </body>
 </html>
