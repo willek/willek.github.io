@@ -179,8 +179,8 @@
     <script type="text/javascript">
     $(function() {
       $(".rslides").responsiveSlides();
-      
-      $('head').append("<link rel=\"stylesheet\" href=\"styles/master.css?"+ Math.random(); +"\">");
+      var rand = Math.random();
+      $('head').append('<link rel="stylesheet" href="styles/master.css?'+rand+'>');
     });
     </script>
   </body>
