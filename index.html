@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="images/wil.png">
     <link rel="stylesheet" href="https://unpkg.com/papercss/dist/paper.min.css">
     <link rel="stylesheet" href="styles/responsiveslides.css">
+    <link rel="stylesheet" href="styles/master.css">
     <title>Willy Setiawan</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
@@ -179,8 +180,13 @@
     <script type="text/javascript">
     $(function() {
       $(".rslides").responsiveSlides();
-      var rand = Math.random();
-      $('head').append('<link rel="stylesheet" href="styles/master.css?'+rand+'>');
+      
+      var cacheBust = ['styles/master.css'];   
+      for (i=0; i < cacheBust.length; i++) {
+        var el = document.createElement('link');
+        el.href = cacheBust[i]+"?v=" + Math.random();
+        document.getElementsByTagName('head')[0].appendChild(el);
+      }
     });
     </script>
   </body>
