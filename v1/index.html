@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Willy Setiawan</title>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav.png">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+    <link rel="stylesheet" href="styles/responsiveslides.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="paper">
+        <div class="to-top">
+          <a href="#top" class="paper-btn margin">^</a>
+        </div>
+        <div class="row flex-center" id="top">
+          <div class="text-center">
+            <h1>Willy Setiawan</h1>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="center">Coding Activity</h2>
+          <div class="row">
+            <div class="col sm-12">
+              <figure>
+                <embed src="https://wakatime.com/share/@b98b76d3-5825-41f0-a234-4aefdb082792/bddb899f-29ca-43f4-8b92-8709faebfc27.svg"></embed>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="center">Languages</h2>
+          <div class="row">
+            <div class="col sm-12">
+              <figure>
+                <embed src="https://wakatime.com/share/@b98b76d3-5825-41f0-a234-4aefdb082792/a6db13c2-55aa-47d7-8d54-2a6998b3bc1c.svg"></embed>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="center">Portofolio</h2>
+          <div class="row">
+            <div class="col sm-12">
+              <h4>1. Furniture Design</h4>
+              <ul class="rslides">
+                <li><img src="images/portofolio/fd-1.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-2.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-3.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-4.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-5.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-6.png" class="no-border"></li>
+                <li><img src="images/portofolio/fd-7.png" class="no-border"></li>
+              </ul>
+            </div>
+            <div class="col sm-12">
+              <h4>2. BBTKLPP Surabaya</h4>
+              <ul class="rslides">
+                <li><img src="images/portofolio/btkl-1.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-2.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-3.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-4.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-5.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-6.png" class="no-border"></li>
+                <li><img src="images/portofolio/btkl-7.png" class="no-border"></li>
+              </ul>
+            </div>
+            <div class="col sm-12">
+              <h4>3. BarangPromosi.biz</h4>
+              <ul class="rslides">
+                <li><img src="images/portofolio/bp-1.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-2.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-3.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-4.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-5.png" class="no-border"></li>
+                <li><img src="images/portofolio/bp-6.png" class="no-border"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="contact">
+          <h2 class="center">Contact</h2>
+          <div class="row">
+            <div class="col sm-4 md-4 lg-4">
+              <a href="https://www.facebook.com/wil.stwn" target="_blank"><button class="btn-block btn-small">Facebook</button></a>
+            </div>
+            <div class="col sm-4 md-4 lg-4">
+              <a href="https://t.me/willysetiawan" target="_blank"><button class="btn-block btn-small">Telegram</button></a>
+            </div>
+            <div class="col sm-4 md-4 lg-4">
+              <a href="https://api.whatsapp.com/send?phone=6285708535297" target="_blank"><button class="btn-block btn-small">WhatsApp</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-edges">
+          <div class="col sm-5">
+            <p class="center">contact.willystwn@gmail.com</p>
+          </div>
+          <div class="col sm-5">
+            <p class="center">Made with <span class="heart">❤</span> in my home sweet home. and also <a href="https://www.getpapercss.com" class="link-to-papercss" target="_blank">PaperCSS</a> too!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="scripts/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $(".rslides").responsiveSlides();
+
+      var cacheBust = ['styles/master.css'];
+      for (i=0; i < cacheBust.length; i++) {
+        var el = document.createElement('link');
+        el.href = cacheBust[i]+"?v=" + Math.random();
+        document.getElementsByTagName('head')[0].appendChild(el);
+      }
+    });
+    </script>
+  </body>
+</html>
